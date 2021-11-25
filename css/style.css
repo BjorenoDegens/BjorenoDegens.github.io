@@ -2,26 +2,21 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-body{
+/*Main Index Pagina*/
+main .mainbox{
     background: 
     linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-/*Main*/
-main .mainbox{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    display: flex;
+    min-height: 100vh;
 }
 main .mainbox .photo1{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 450px;
 }
 main .mainbox .box{
     margin: 20px;
@@ -30,13 +25,26 @@ main .mainbox .box{
 main .mainbox .textbox{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 15px;
+    width: 450px;
 }
-main .mainbox .box .buttontext{
+main .mainbox .box .textbox .buttontext li a{
     height: auto;
-    width: auto;
+    width:150px;
+    color: white;
 }
-
-
+/*Main Home Pagina*/
+.homecontainer{
+    background: 
+    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    min-height: 100vh;
+}
+.homecontainer main .textbox{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+    width: 450px;
+}
 /*Nav + Buttons*/
 ul {
     display: flex;
