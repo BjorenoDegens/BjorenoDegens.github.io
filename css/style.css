@@ -1,72 +1,88 @@
-*{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 /*Main Index Pagina*/
-main .mainbox{
-    background: 
-    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+main .mainbox {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-main .mainbox .photo1{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 450px;
+main .mainbox .photo1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 450px;
 }
-main .mainbox .box{
-    margin: 20px;
-    display: flex;
+main .mainbox .box {
+  margin: 20px;
+  display: flex;
 }
-main .mainbox .textbox{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 15px;
-    width: 450px;
+main .mainbox .textbox {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+  width: 450px;
 }
-main .mainbox .box .textbox .buttontext li a{
-    height: auto;
-    width:150px;
-    color: white;
+main .mainbox .box .textbox .buttontext li a {
+  height: auto;
+  width: 150px;
+  color: black;
 }
 /*Main Home Pagina*/
-.homecontainer{
-    background: 
-    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    min-height: 100vh;
+.homecontainer {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  min-height: 100vh;
 }
-.homecontainer main .mainbox .box1{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 15px;
-    width: 450px;
+.boxes {
+  background-color: white;
+  width: 100%;
+  height: 500px;
 }
-.homecontainer main .mainbox .box2{
-    background-color: yellow;
+.homecontainer main .mainbox .box1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+  width: auto;
+  display: flex;
+}
+.homecontainer main .mainbox .box2 {
+  margin: 10px;
 }
 /*Nav + Buttons*/
+.homecontainer header nav {
+  position: fixed;
+  top: 0;
+}
 ul {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 li {
-    display: inline;
+  display: inline;
 }
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 50%;
-    margin: 10px;
-    font-family: 'M PLUS 2', sans-serif;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px;
+  font-family: "M PLUS 2", sans-serif;
 }
 li a:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
