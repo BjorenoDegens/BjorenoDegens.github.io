@@ -56,11 +56,16 @@ main .mainbox .box .textbox .buttontext li a {
   min-height: 100vh;
   border-bottom: 1px solid black;
 }
-.textbox {
+.hometextbox {
   width: 100%;
   height: 100px;
-  background-color: blue;
-  padding: 100px, 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hometextbox .text {
+  color: gray;
+  opacity: 0.9;
 }
 .boxes {
   background-color: white;
