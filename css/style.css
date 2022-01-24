@@ -6,26 +6,24 @@
 /*Main Index Pagina*/
 .maincontainer {
   background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(235, 215, 215, 1) 72%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-height: 100vh;
 }
+
+main {
+  height: 100%;
+}
+
 main .mainbox {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 main .mainbox .photo1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -48,12 +46,11 @@ main .mainbox .box .textbox .buttontext li a {
 /*Main Home Pagina*/
 .homecontainer {
   background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(235, 215, 215, 1) 72%,
+    rgba(255, 255, 255, 1) 100%
+  );
   min-height: 100vh;
   border-bottom: 1px solid black;
 }
@@ -116,33 +113,28 @@ main .mainbox .box .textbox .buttontext li a {
   padding: 15px;
   width: auto;
   display: flex;
+  background-color: white;
 }
 .homecontainer main .mainbox .box2 {
   margin: 10px;
 }
 /*contact*/
 .contactcontainer {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(246, 176, 176, 1) 72%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-height: 100vh;
 }
-main .mainbox {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+.maincontactbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 main .mainbox .photo1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -179,10 +171,12 @@ main .mainbox .box .textbox .buttontext li a {
 .homecontainer header nav {
   position: fixed;
   top: 0;
+  width: 100%;
 }
 ul {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 li {
   display: inline;
@@ -193,7 +187,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border: 1px solid black;
   border-radius: 50%;
   margin: 10px;
   font-family: "M PLUS 2", sans-serif;
@@ -201,7 +194,20 @@ li a {
 li a:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.headername {
+  display: flex;
+  align-items: center;
+}
+.listbox {
+  display: flex;
+  flex-direction: row;
+}
 /* Borderline tussen kopjes*/
 .border {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+}
+.imgborder {
+  border: 4px solid red;
+  width: 250px;
+  height: 250px;
 }
