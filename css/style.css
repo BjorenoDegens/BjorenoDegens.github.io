@@ -72,7 +72,7 @@ main .mainbox .box .textbox .buttontext li a {
 .boxes1 {
   background-color: white;
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: row;
 }
@@ -81,20 +81,23 @@ main .mainbox .box .textbox .buttontext li a {
   width: 100%;
   height: auto;
 }
-.box3text{
+.box3text {
   display: flex;
   align-items: center;
   padding-left: 50px;
 }
-.box3{
-  height: 500px;
+.box3 {
+  height: auto;
   width: 100%;
 }
-.box3box{
+.box3box {
   padding-left: 100px;
   display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
-.imgtext{
+.imgtext {
   display: flex;
   flex-direction: column;
 }
@@ -102,10 +105,11 @@ main .mainbox .box .textbox .buttontext li a {
   display: flex;
   flex-direction: column;
 }
-.box3box .box2{
+.box3box .box2 {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  width: 250px;
 }
 .homecontainer main .mainbox .box1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -116,19 +120,60 @@ main .mainbox .box .textbox .buttontext li a {
 .homecontainer main .mainbox .box2 {
   margin: 10px;
 }
- /*Footer*/
-.footerblok{
+/*contact*/
+.contactcontainer {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+main .mainbox {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main .mainbox .photo1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 450px;
+}
+main .mainbox .box {
+  margin: 20px;
+  display: flex;
+}
+main .mainbox .textbox {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+  width: 450px;
+}
+main .mainbox .box .textbox .buttontext li a {
+  height: auto;
+  width: 150px;
+  color: black;
+}
+/*Footer*/
+.footerblok {
   width: auto;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
-.footertext{
+
+.footertext {
   background-color: green;
   display: flex;
   flex-direction: column;
-
 }
 /*Nav + Buttons*/
 .homecontainer header nav {
@@ -157,6 +202,6 @@ li a:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* Borderline tussen kopjes*/
-.border{
+.border {
   border-bottom: 1px solid black;
 }
