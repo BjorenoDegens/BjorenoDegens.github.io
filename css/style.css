@@ -154,6 +154,34 @@ main .mainbox .box .textbox .buttontext li a {
   width: 150px;
   color: black;
 }
+/*losse pagina voor Youri :)*/
+.extracontainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(246, 176, 176, 1) 72%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-height: 100vh;
+}
+.mainextrabox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainextrabox .box .textbox form {
+  display: flex;
+  flex-direction: column;
+}
+.mainextrabox .box .textbox table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 /*Footer*/
 .footerblok {
   width: auto;
@@ -167,6 +195,7 @@ main .mainbox .box .textbox .buttontext li a {
   display: flex;
   flex-direction: column;
 }
+
 /*Nav + Buttons*/
 .homecontainer header nav {
   position: fixed;
