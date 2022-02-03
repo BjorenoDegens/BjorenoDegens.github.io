@@ -254,3 +254,37 @@ li a:hover {
 h3 {
   font-size: 25px;
 }
+
+@media only screen and (max-width: 600px) {
+  .box3box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  li a {
+    margin: 0px;
+  }
+  .hometextbox li a {
+    height: auto;
+    color: pink;
+  }
+  .hometextbox {
+    height: auto;
+  }
+  .imgborder {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  main .mainbox {
+    display: flex;
+    flex-direction: column;
+  }
+}
